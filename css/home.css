@@ -1,4 +1,41 @@
 /* home */
+
+.intro{
+  display: grid;
+  grid-template-areas: 
+  "cd cdd cdd cdt";
+}
+
+#intro_text{
+  grid-area: cdt;
+  padding-left: 60px;
+  text-align:justify;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 200px;
+  height: 260px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  grid-area: cd;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#card-posi{
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
 .blurb {
     width:100%;
   }
@@ -11,4 +48,25 @@ width:860px;
 height: 33px;
 width: auto;
 margin: 0 10px;
+}
+
+.button{
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+}
+
+button {
+  background-color: #099;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: p;
+  border-radius: 30px;
+  align-items: flex-end;
 }

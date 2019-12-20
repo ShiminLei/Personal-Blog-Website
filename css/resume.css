@@ -1,0 +1,27 @@
+.resume_container{
+    display:grid;
+       /* grid-template-columns: 300px 300px 300px; */
+       /* grid-template-columns: repeat(3, 350px); */
+       /* grid-template-rows: 250px 600px; */
+    grid-template-areas: 
+    "a a a a a a a a"
+    "b b b b b b b b "
+    "c c c c c c c c "
+    "d d d d d d d d";
+    /* border: 2px solid rgb(83, 83, 77); */
+}
+
+.research{
+    grid-area: a;
+}
+.experience{
+    grid-area: b;
+}
+
+.activity{
+    grid-area: c;
+}
+
+.contact{
+    grid-area: d;
+}
